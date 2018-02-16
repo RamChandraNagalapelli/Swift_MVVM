@@ -13,10 +13,10 @@ class NetworkManager: NSObject {
     static var isReachable: Bool = false
 
     class func requestForURL(reqUrl: URL, method: HttpMethod, parameters: [String : Any]?, success: @escaping (_ data: NSDictionary) -> Void, failure: @escaping (_ error: Error?) -> Void) {
-        guard isReachable else {
-            failure(nil)
-            return
-        }
+//        guard isReachable else {
+//            failure("Please check your internet connection.")
+//            return
+//        }
 
         // Create request
         let request = NSMutableURLRequest(url: reqUrl)
@@ -47,6 +47,7 @@ class NetworkManager: NSObject {
         session.configuration.timeoutIntervalForResource = 60.0
 
         let task = session.dataTask(with: request as URLRequest) { data, response, error in
+            print(response ?? URLResponse())
             if error != nil {
                 DispatchQueue.main.async {
                     failure(error)
