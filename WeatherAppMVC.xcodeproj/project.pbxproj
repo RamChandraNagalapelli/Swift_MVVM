@@ -19,7 +19,7 @@
 		1A6337432036B1D300D21885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6337452036B1D300D21885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A6337482036B1D300D21885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A63374A2036B1D300D21885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A63374A2036B1D300D21885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		1A63374D2036B1D300D21885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A63374F2036B1D300D21885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,14 +54,62 @@
 		1A6337422036B1D300D21885 /* WeatherAppMVC */ = {
 			isa = PBXGroup;
 			children = (
-				1A6337432036B1D300D21885 /* AppDelegate.swift */,
-				1A6337452036B1D300D21885 /* ViewController.swift */,
-				1A6337472036B1D300D21885 /* Main.storyboard */,
-				1A63374A2036B1D300D21885 /* Assets.xcassets */,
-				1A63374C2036B1D300D21885 /* LaunchScreen.storyboard */,
-				1A63374F2036B1D300D21885 /* Info.plist */,
+				1A63375A2036B4D300D21885 /* Application */,
+				1A6337592036B4C600D21885 /* Resource */,
+				1A6337582036B44E00D21885 /* Storyboard */,
+				1A6337572036B43700D21885 /* Model */,
+				1A6337562036B42F00D21885 /* View */,
+				1A6337552036B41D00D21885 /* Controller */,
 			);
 			path = WeatherAppMVC;
+			sourceTree = "<group>";
+		};
+		1A6337552036B41D00D21885 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A6337452036B1D300D21885 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A6337562036B42F00D21885 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A6337572036B43700D21885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A6337582036B44E00D21885 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1A6337472036B1D300D21885 /* Main.storyboard */,
+				1A63374C2036B1D300D21885 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1A6337592036B4C600D21885 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1A63374A2036B1D300D21885 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A63375A2036B4D300D21885 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1A6337432036B1D300D21885 /* AppDelegate.swift */,
+				1A63374F2036B1D300D21885 /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +144,7 @@
 				TargetAttributes = {
 					1A63373F2036B1D300D21885 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -274,12 +322,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4Z75ZF4559;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C64GAK5X6W;
 				INFOPLIST_FILE = WeatherAppMVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d8b2a7f-7254-495f-9900-eaf87988fc95";
+				PROVISIONING_PROFILE_SPECIFIER = "Star Provisioning profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +339,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4Z75ZF4559;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C64GAK5X6W;
 				INFOPLIST_FILE = WeatherAppMVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d8b2a7f-7254-495f-9900-eaf87988fc95";
+				PROVISIONING_PROFILE_SPECIFIER = "Star Provisioning profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
