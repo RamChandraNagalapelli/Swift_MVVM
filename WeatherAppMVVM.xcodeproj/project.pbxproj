@@ -10,7 +10,6 @@
 		1A6337442036B1D300D21885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6337432036B1D300D21885 /* AppDelegate.swift */; };
 		1A6337462036B1D300D21885 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6337452036B1D300D21885 /* HomeViewController.swift */; };
 		1A6337492036B1D300D21885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6337472036B1D300D21885 /* Main.storyboard */; };
-		1A63374B2036B1D300D21885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A63374A2036B1D300D21885 /* Assets.xcassets */; };
 		1A63374E2036B1D300D21885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A63374C2036B1D300D21885 /* LaunchScreen.storyboard */; };
 		1A63375D2036B98F00D21885 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63375C2036B98F00D21885 /* NetworkManager.swift */; };
 		1ABFCE422036CE230033821E /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE412036CE230033821E /* DayView.swift */; };
@@ -21,14 +20,14 @@
 		1ABFCE502036FA660033821E /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE4F2036FA660033821E /* Enum.swift */; };
 		1ABFCE522036FA990033821E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE512036FA990033821E /* UIImageView+Extension.swift */; };
 		1ABFCE542036FADC0033821E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE532036FADC0033821E /* Double+Extension.swift */; };
+		1ABFCE5620370AD20033821E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABFCE5520370AD10033821E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A6337402036B1D300D21885 /* WeatherAppMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6337402036B1D300D21885 /* WeatherAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6337432036B1D300D21885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6337452036B1D300D21885 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1A6337482036B1D300D21885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A63374A2036B1D300D21885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		1A63374D2036B1D300D21885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A63374F2036B1D300D21885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A63375C2036B98F00D21885 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		1ABFCE4F2036FA660033821E /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		1ABFCE512036FA990033821E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		1ABFCE532036FADC0033821E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		1ABFCE5520370AD10033821E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		1A6337372036B1D300D21885 = {
 			isa = PBXGroup;
 			children = (
-				1A6337422036B1D300D21885 /* WeatherAppMVC */,
+				1A6337422036B1D300D21885 /* WeatherAppMVVM */,
 				1A6337412036B1D300D21885 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,25 +64,25 @@
 		1A6337412036B1D300D21885 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A6337402036B1D300D21885 /* WeatherAppMVC.app */,
+				1A6337402036B1D300D21885 /* WeatherAppMVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A6337422036B1D300D21885 /* WeatherAppMVC */ = {
+		1A6337422036B1D300D21885 /* WeatherAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1ABFCE5520370AD10033821E /* Assets.xcassets */,
 				1ABFCE4D2036FA3F0033821E /* Store */,
 				1ABFCE452036DBDB0033821E /* APIServices */,
 				1A63375B2036B97200D21885 /* Network */,
 				1A63375A2036B4D300D21885 /* Application */,
-				1A6337592036B4C600D21885 /* Resource */,
 				1A6337582036B44E00D21885 /* Storyboard */,
 				1A6337572036B43700D21885 /* Model */,
 				1A6337562036B42F00D21885 /* View */,
 				1A6337552036B41D00D21885 /* Controller */,
 			);
-			path = WeatherAppMVC;
+			path = WeatherAppMVVM;
 			sourceTree = "<group>";
 		};
 		1A6337552036B41D00D21885 /* Controller */ = {
@@ -117,14 +117,6 @@
 				1A63374C2036B1D300D21885 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		1A6337592036B4C600D21885 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				1A63374A2036B1D300D21885 /* Assets.xcassets */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		1A63375A2036B4D300D21885 /* Application */ = {
@@ -182,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A63373F2036B1D300D21885 /* WeatherAppMVC */ = {
+		1A63373F2036B1D300D21885 /* WeatherAppMVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A6337522036B1D300D21885 /* Build configuration list for PBXNativeTarget "WeatherAppMVC" */;
+			buildConfigurationList = 1A6337522036B1D300D21885 /* Build configuration list for PBXNativeTarget "WeatherAppMVVM" */;
 			buildPhases = (
 				1A63373C2036B1D300D21885 /* Sources */,
 				1A63373D2036B1D300D21885 /* Frameworks */,
@@ -194,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = WeatherAppMVC;
+			name = WeatherAppMVVM;
 			productName = WeatherAppMVC;
-			productReference = 1A6337402036B1D300D21885 /* WeatherAppMVC.app */;
+			productReference = 1A6337402036B1D300D21885 /* WeatherAppMVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A63373B2036B1D300D21885 /* Build configuration list for PBXProject "WeatherAppMVC" */;
+			buildConfigurationList = 1A63373B2036B1D300D21885 /* Build configuration list for PBXProject "WeatherAppMVVM" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A63373F2036B1D300D21885 /* WeatherAppMVC */,
+				1A63373F2036B1D300D21885 /* WeatherAppMVVM */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A63374E2036B1D300D21885 /* LaunchScreen.storyboard in Resources */,
-				1A63374B2036B1D300D21885 /* Assets.xcassets in Resources */,
+				1ABFCE5620370AD20033821E /* Assets.xcassets in Resources */,
 				1A6337492036B1D300D21885 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +394,7 @@
 				DEVELOPMENT_TEAM = C64GAK5X6W;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherAppMVC/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7d8b2a7f-7254-495f-9900-eaf87988fc95";
 				PROVISIONING_PROFILE_SPECIFIER = "Star Provisioning profile";
@@ -419,7 +411,7 @@
 				DEVELOPMENT_TEAM = C64GAK5X6W;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherAppMVC/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.credencys.WeatherAppMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7d8b2a7f-7254-495f-9900-eaf87988fc95";
 				PROVISIONING_PROFILE_SPECIFIER = "Star Provisioning profile";
@@ -431,7 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A63373B2036B1D300D21885 /* Build configuration list for PBXProject "WeatherAppMVC" */ = {
+		1A63373B2036B1D300D21885 /* Build configuration list for PBXProject "WeatherAppMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A6337502036B1D300D21885 /* Debug */,
@@ -440,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A6337522036B1D300D21885 /* Build configuration list for PBXNativeTarget "WeatherAppMVC" */ = {
+		1A6337522036B1D300D21885 /* Build configuration list for PBXNativeTarget "WeatherAppMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A6337532036B1D300D21885 /* Debug */,

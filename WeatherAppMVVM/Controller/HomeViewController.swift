@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     let baseUrl = "http://api.openweathermap.org/data/2.5/forecast"
-    let appId = "5c2749a4245fd55a7b532de848d8dad2"
+    let appId = "1fa136797a15633a60b2ec78f34a1179"
     let latitude = 23.0170775
     let longitude = 72.5263869
     lazy var dateFormatter = DateFormatter()
