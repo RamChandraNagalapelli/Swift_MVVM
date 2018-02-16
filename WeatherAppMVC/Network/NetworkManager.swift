@@ -107,10 +107,3 @@ class NetworkManager: NSObject {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(checkReachability), userInfo: nil, repeats: true)
     }
 }
-
-enum HttpMethod: String {
-    case get = "GET"
-    case put = "PUT"
-    case delete = "DEL"
-    case post = "POST"
-}

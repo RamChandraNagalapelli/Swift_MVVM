@@ -18,6 +18,9 @@
 		1ABFCE472036DBFF0033821E /* WeatherApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE462036DBFF0033821E /* WeatherApiServices.swift */; };
 		1ABFCE492036DC930033821E /* WeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE482036DC930033821E /* WeatherItem.swift */; };
 		1ABFCE4C2036E5510033821E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE4B2036E5510033821E /* UIViewController+Extension.swift */; };
+		1ABFCE502036FA660033821E /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE4F2036FA660033821E /* Enum.swift */; };
+		1ABFCE522036FA990033821E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE512036FA990033821E /* UIImageView+Extension.swift */; };
+		1ABFCE542036FADC0033821E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFCE532036FADC0033821E /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		1ABFCE462036DBFF0033821E /* WeatherApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiServices.swift; sourceTree = "<group>"; };
 		1ABFCE482036DC930033821E /* WeatherItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherItem.swift; sourceTree = "<group>"; };
 		1ABFCE4B2036E5510033821E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1ABFCE4F2036FA660033821E /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		1ABFCE512036FA990033821E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1ABFCE532036FADC0033821E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,7 @@
 		1A6337422036B1D300D21885 /* WeatherAppMVC */ = {
 			isa = PBXGroup;
 			children = (
-				1ABFCE4A2036E53A0033821E /* Extensions */,
+				1ABFCE4D2036FA3F0033821E /* Store */,
 				1ABFCE452036DBDB0033821E /* APIServices */,
 				1A63375B2036B97200D21885 /* Network */,
 				1A63375A2036B4D300D21885 /* Application */,
@@ -150,8 +156,27 @@
 			isa = PBXGroup;
 			children = (
 				1ABFCE4B2036E5510033821E /* UIViewController+Extension.swift */,
+				1ABFCE512036FA990033821E /* UIImageView+Extension.swift */,
+				1ABFCE532036FADC0033821E /* Double+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1ABFCE4D2036FA3F0033821E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1ABFCE4E2036FA540033821E /* Enum */,
+				1ABFCE4A2036E53A0033821E /* Extensions */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		1ABFCE4E2036FA540033821E /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				1ABFCE4F2036FA660033821E /* Enum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABFCE522036FA990033821E /* UIImageView+Extension.swift in Sources */,
 				1ABFCE4C2036E5510033821E /* UIViewController+Extension.swift in Sources */,
 				1A63375D2036B98F00D21885 /* NetworkManager.swift in Sources */,
 				1ABFCE422036CE230033821E /* DayView.swift in Sources */,
 				1ABFCE492036DC930033821E /* WeatherItem.swift in Sources */,
+				1ABFCE542036FADC0033821E /* Double+Extension.swift in Sources */,
 				1ABFCE442036CEA10033821E /* WeatherCell.swift in Sources */,
+				1ABFCE502036FA660033821E /* Enum.swift in Sources */,
 				1A6337462036B1D300D21885 /* HomeViewController.swift in Sources */,
 				1A6337442036B1D300D21885 /* AppDelegate.swift in Sources */,
 				1ABFCE472036DBFF0033821E /* WeatherApiServices.swift in Sources */,
