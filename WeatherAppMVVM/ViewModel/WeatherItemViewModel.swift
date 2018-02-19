@@ -30,6 +30,10 @@ class WeatherItemViewModel {
         }
     }
 
+    var numberOfItems: Int {
+        return arrWeatherItems.count
+    }
+
     lazy var dateFormatter = DateFormatter()
 
     func getWeatherData(_ completionHandler: @escaping (String?) -> Void) {
@@ -46,7 +50,7 @@ class WeatherItemViewModel {
     }
 
     func dateString(atIndex index: Int) -> String {
-        guard arrWeatherItems.count > index else { return "" }
+        guard numberOfItems > index else { return "" }
         dateFormatter.amSymbol = "am"
         dateFormatter.pmSymbol = "pm"
         dateFormatter.dateFormat = "EEEE, hh:mma"
@@ -54,18 +58,18 @@ class WeatherItemViewModel {
     }
 
     func imageUrl(atIndex index: Int) -> URL {
-        guard arrWeatherItems.count > index else { return URL(string: "")! }
+        guard numberOfItems > index else { return URL(string: "")! }
         let icon = arrWeatherItems[index].icon
         return URL(string: "http://openweathermap.org/img/w/" + icon + ".png")!
     }
 
     func minTemp(atIndex index: Int) -> String {
-        guard arrWeatherItems.count > index else { return "" }
+        guard numberOfItems > index else { return "" }
         return arrWeatherItems[index].minTemp.roundedString + "°"
     }
 
     func maxTemp(atIndex index: Int) -> String {
-        guard arrWeatherItems.count > index else { return "" }
+        guard numberOfItems > index else { return "" }
         return arrWeatherItems[index].maxTemp.roundedString + "°"
     }
 }
